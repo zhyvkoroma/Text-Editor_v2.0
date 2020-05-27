@@ -1,0 +1,92 @@
+.container {
+    max-width: 1550px;
+    min-height: 740px;
+    margin: 10px auto;
+    border: 1px solid rgba(242, 241, 239, 1);
+    box-shadow: 2px 2px 10px 2px rgb(196, 195, 194);
+    border-radius: 40px;
+    background-size: cover;
+}
+
+.wrapper {
+    margin-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.btn-block {
+    display: inline-flex;
+    border-radius: 13px;
+    border: 2px solid #339af0;
+    margin-left: 10px;
+
+    .fas {
+        position: relative;
+        height: 30px;
+        width: 30px;
+        color: #2e3131;
+        cursor: pointer;
+        font-size: 25px;
+        padding: 10px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 10px;
+
+        &:hover {
+            color: white;
+            background-color: #339af0;
+            transition: ease-in-out 0.4s;
+        }
+
+    }
+
+    .active-btn {
+        color: white;
+        background-color: #339af0;
+    }
+
+    .fa-unlock {
+        display: block;
+	}
+	
+}
+
+.text {
+    padding: 30px;
+    font-family: ChelseaMarket-Regular;
+
+    &__show-text {
+        font-size: 25px;
+    }
+}
+
+button {
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+
+.selected-btn::after{
+    position: absolute;
+    top: 42px;
+    left: 12.5px;
+    content: '';
+    height: 2.5px;
+    width: 25px;
+    border-radius: 50px;
+    background-color: #339af0;
+}
+
+.selected-btn:hover::after{
+    background-color: #fff;
+    transition: ease-in-out 0.4s;
+}
